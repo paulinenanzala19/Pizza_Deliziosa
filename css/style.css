@@ -28,3 +28,28 @@ body{
     color: #FFAE42;
 
 }
+.carousel-item h5{
+    font-size: 30px;
+    color: #FFAE42;
+    border: 1px solid blue;
+    width: 50%;
+    margin-left: 60%;
+    margin-top: -30%;
+}
+.carousel-item p{
+    font-size: 20px;
+    border: 1px solid #FFAE42;
+    color: #FFAE42;
+    width: 50%;
+    margin-left: 50%;
+
+}
+ img{
+    width: 10%;
+    height: 10%;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.8);
+    /* margin-top: 5%; */
+   
+}
