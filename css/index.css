@@ -1,0 +1,26 @@
+.intro{
+    /* border: 1px solid blue; */
+    text-align: center;
+    
+    font-style: italic;
+    font-size: 50px;
+    background-image: url("../assets/pizza3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+}
+.intro h1{
+    font-size: 80px;
+    /* border: 1px solid black; */
+    margin-bottom: 10%;
+    padding-top: 10%;
+    font-weight: bolder;
+}
+#button{
+    margin-bottom: 20%;
+    margin-top: 10%;
+    background-color: #FFAE42;
+    font-size: 30px;
+    width: 15%;
+    border: #FFAE42;
+}
