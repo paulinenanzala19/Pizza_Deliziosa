@@ -94,3 +94,13 @@ img{
 .pizza{
     width: 40%;
 }
+.delivery{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: #FFAE42;
+    text-align: center;
+}
