@@ -13,3 +13,18 @@ body{
     font-size: 20px;
     margin-top: 2%;
 }
+.about h2{
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
+.about{
+    font-size: 30px;
+    /* border: 1px solid blue; */
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: #FFAE42;
+
+}
