@@ -69,8 +69,25 @@ img{
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFAE42;
+    margin: 1%;
 }
-.order{
+#select{
+    width: 40%;
+    margin-bottom: 1%;
+    padding: 0.5%;
+    margin-left: 1%;
+}
+#crust{
+    width: 40%;
+    padding: 0.5%;
+    margin-left: 1%;
+}
+.toppings{
     display: flex;
-    /* flex-direction: column; */
+    margin: 1%;
+    /* border: 1px solid #FFAE42; */
+    width: 40%;
+    justify-content: space-between;
 }

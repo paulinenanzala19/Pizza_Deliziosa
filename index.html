@@ -73,6 +73,7 @@
     </div>
     <div class="order">
       <form action=""id="form">
+        <label for="">select size</label>
         <select name="" id="select">
           <optgroup>
             <option value="">size</option>
@@ -81,7 +82,8 @@
             <option value="">small</option>
           </optgroup>
         </select>
-        <select name="" id="toppings">
+        <label for="">select toppings</label>
+        <select name="" id="crust">
           <optgroup>
             <option value="">select crust</option>
             <option value="">crispy</option>
@@ -89,23 +91,27 @@
             <option value="">gluten-free</option>
           </optgroup>
         </select>
-        <div class="mush">
-          <input type="checkbox" name="toppings" id="mushroom" value="mushroom">
-          <label for="mushroom">mushroom</label>
-
+        <div class="toppings">
+          <div class="mush">
+            <input type="checkbox" name="toppings" id="mushroom" value="mushroom">
+            <label for="mushroom">mushroom</label>
+  
+          </div>
+          <div class="onions">
+            <input type="checkbox" name="toppings" id="onions" value="onions">
+            <label for="onions">onions</label>
+          </div>
+          <div class="olive">
+            <input type="checkbox" name="toppings" id="olive" value="black olive">
+            <label for="olive">black olive</label>
+          </div>
+          <div class="pep">
+            <input type="checkbox" name="toppings" id="pep" value="pepperoni">
+            <label for="pep">pepperoni</label>
+          </div>
+          
         </div>
-        <div class="onions">
-          <input type="checkbox" name="toppings" id="onions" value="onions">
-          <label for="onions">onions</label>
-        </div>
-        <div class="olive">
-          <input type="checkbox" name="toppings" id="olive" value="black olive">
-          <label for="olive">black olive</label>
-        </div>
-        <div class="pep">
-          <input type="checkbox" name="toppings" id="pep" value="pepperoni">
-          <label for="pep">pepperoni</label>
-        </div>
+        
         
 
       </form>
