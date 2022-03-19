@@ -3,3 +3,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.nav ul{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 50%;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 2%;
+}
