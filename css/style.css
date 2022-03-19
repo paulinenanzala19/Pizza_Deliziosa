@@ -97,10 +97,41 @@ img{
 .delivery{
     display: flex;
     flex-direction: column;
+    color: #FFAE42;
+    margin-left: 5%;
 }
 .contact{
     display: flex;
     flex-direction: column;
     color: #FFAE42;
     text-align: center;
+}
+#footer{
+    color: #FFAE42;
+    text-align: center;
+}
+#btn{
+    width: 10%;
+    padding: 0.5%;
+    background-color: #FFAE42;
+    border: #FFAE42;
+    margin-top: 1%;
+}
+.output{
+    color: #FFAE42;
+    margin-left: 5%;
+}
+#delivery{
+    width: 10%;
+    padding: 0.5%;
+    background-color: #FFAE42;
+    border: #FFAE42;
+    margin-bottom: 1%;
+}
+#checkout{
+    width: 10%;
+    padding: 0.5%;
+    background-color: #FFAE42;
+    border: #FFAE42;
+    margin-bottom: 1%;
 }
