@@ -11,6 +11,7 @@ pauline Wafula
 This is a web application for Pizza Deliziosa which is a pizza place that offers variety of pizza depending on size, crust and toppings.It contains details of about us that touches on a little background. Their menu also allows customers to order online for their preferred pizza depending on size, crustand toppings  they need and also allows them to input a name, phone number and location which they would love the pizza to be delivered to. 
 
 ## Live link
+https://paulinenanzala19.github.io/Pizza_Deliziosa/
 
 ## Installation / Setup instruction
 * Open Terminal {Ctrl+Alt+T}
