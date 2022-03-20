@@ -1,9 +1,9 @@
-function Pizza(size,crust,number,toppings,delivery){
+function Pizza(size,crust,number,toppings){
     this.size=size;
     this.crust=crust;
     this.number=number;
     this.toppings=toppings;
-    this.delivery=delivery
+   
 }
  
 Pizza.prototype.getTotalPrice=function(){
@@ -41,9 +41,15 @@ $("button#checkout").click(function(e){
     let userToppings=$("input.toppings").val()
 
     var pizza1=new Pizza(userSize,userCrust,userNo,userToppings)
-    
+
+    if(userNo===""){
+        alert("please fill this field")
+    }
+    else{
+        $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
+    }
     // console.log(pizza1.getTotalPrice())
-    $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
+    // $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
 
     $("button#delivery").show()
     
