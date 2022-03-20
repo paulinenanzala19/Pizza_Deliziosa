@@ -78,6 +78,12 @@ img{
     color: #FFAE42;
    
 }
+#type{
+    width: 40%;
+    margin-bottom: 1%;
+    padding: 0.5%;
+    margin-left: 1%;
+}
 #select{
     width: 40%;
     margin-bottom: 1%;
@@ -138,7 +144,7 @@ img{
 }
 #delivery{
     display: none;
-    width: 10%;
+    width: 20%;
     padding: 0.5%;
     background-color: #FFAE42;
     border: #FFAE42;
@@ -157,6 +163,14 @@ img{
     margin-left: 5%;
     width: 40%;
     margin-top: 1%;
+}
+.output{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 5%;
+    width: 40%;
+    margin-top: 1%;
+    color: #FFAE42;
+    font-size: 20px;
 }
 .email{
     width: 40%;

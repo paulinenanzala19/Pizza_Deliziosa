@@ -52,22 +52,34 @@
     </div>
     <div class="order">
       <form action=""id="form">
+        <label class="label" for="">select type</label>
+        <select name="" id="type">
+          <optgroup>
+            <option value="0">select type</option>
+            <option value="chicken tikka">chicken tikka</option>
+            <option value="chicken alfredo pizza">chicken alfredo pizza</option>
+            <option value="sunchoke pizza">sunchoke pizza</option>
+            <option value="periperi pizza">periperi pizza</option>
+            <option value="Rapsberry dessert pizza">Rapsberry dessert pizza</option>
+          </optgroup>
+        </select>
         <label class="label" for="">select size</label>
         <select name="" id="select">
           <optgroup>
-            
+            <option value="0">select size</option>
             <option value="large">large --ksh.1200</option>
-            <option value="medium">medium</option>
-            <option value="small">small</option>
+            <option value="medium">medium --ksh. 1000</option>
+            <option value="small">small --ksh.800</option>
           </optgroup>
         </select>
         <label class="label" for="">select toppings</label>
         <select name="" id="crust">
           <optgroup>
+            <option value="0">select crust</option>
 
-            <option value="crispy">crispy</option>
-            <option value="stuffed">stuffed</option>
-            <option value="gluten">gluten-free</option>
+            <option value="crispy">crispy --ksh.500</option>
+            <option value="stuffed">stuffed --ksh.400</option>
+            <option value="gluten">gluten-free --ksh.300</option>
           </optgroup>
         </select>
         <label class="label" for="">Number of pizzas</label>
@@ -121,13 +133,16 @@
       <input type="text"value=""class="pizza" id="location" placeholder="location" required>
 
       <button id="btn">submit</button>
+      <div class="feedback">
+        <p class="output"></p>
+      </div>
       
 
     </div>
     
     <div class="contact">
       <h1>contact us</h1>
-      <input type="text"value=""class="email" id="location" placeholder="email">
+      <input type="text"value=""class="email" id="location" placeholder="email@gmail.com">
       <div class="footer">
         <p>email: pizzapalace@gmail.com</p>
         <p>tel:   02234567856</p>

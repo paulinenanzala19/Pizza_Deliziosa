@@ -1,4 +1,5 @@
-function Pizza(size,crust,number,toppings){
+function Pizza(type,size,crust,number,toppings){
+    this.type=type
     this.size=size;
     this.crust=crust;
     this.number=number;
@@ -8,23 +9,39 @@ function Pizza(size,crust,number,toppings){
  
 Pizza.prototype.getTotalPrice=function(){
     let sizePrice;
-    if(this.size==="large"){
-        sizePrice=1200
-    }else if(this.size==="medium"){
-        sizePrice=1000
+    if(this.size=="0"){
+        sizePrice=0;
+    }else if(this.size=="large"){
+        sizePrice=1200;
+    }else if(this.size=="medium"){
+        sizePrice=1000;
+    }else if(this.size=="small"){
+        sizePrice=800;
     }else{
-        sizePrice=800
-    }
+        console.log("error")
+    };
 
    let crustPrice;
-   if(this.crust==="crispy"){
+   if(this.crust=="crispy"){
        crustPrice=500
-   } else if(this.crust==="stuffed"){
+   } else if(this.crust=="stuffed"){
        crustPrice=400
    }else{
        crustPrice=300
    }
-   let total=(sizePrice + crustPrice)*this.number
+
+   let userToppings=[]
+
+   $.each($("input [name='toppings']:checked"),function(){
+       userToppings.push($(this).val());
+       
+   });
+   console.log(userToppings.join(","));
+
+   let toppingsPrice= userToppings.length*100;
+   console.log(toppingsPrice)
+
+   let total=(sizePrice + crustPrice + toppingsPrice)*this.number
     
    return total
 };
@@ -35,20 +52,25 @@ Pizza.prototype.getTotalPrice=function(){
  
 $("button#checkout").click(function(e){
     e.preventDefault()
+    let userType=$("#type option:selected").val()
     let userSize=$("#select option:selected").val()
     let userCrust=$("#crust option:selected").val()
     let userNo=$(".pizza").val()
-    let userToppings=$("input.toppings").val()
+    let userToppings=[]
 
-    var pizza1=new Pizza(userSize,userCrust,userNo,userToppings)
+    $.each($("input [name='toppings']:checked"),function(){
+        userToppings.push($(this).val());
+    });
+
+    var pizza1=new Pizza(userType,userSize,userCrust,userNo,userToppings)
 
     if(userNo===""){
         alert("please fill this field")
     }
     else{
-        $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
+        $(".result").append("your order is "+ userType + "," + userSize +"," + userCrust + " : " + pizza1.getTotalPrice())
     }
-    // console.log(pizza1.getTotalPrice())
+    console.log(pizza1.getTotalPrice())
     // $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
 
     $("button#delivery").show()
