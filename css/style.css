@@ -43,19 +43,8 @@ img{
     margin: 0 auto;
     object-fit: contain;
 }
-.d-block {
-    width: 60vw;
-    height: 100vh;
-    
-}
-.carousel-item p{
-    font-size: 30px;
-    /* border: 1px solid #FFAE42; */
-    color: #FFAE42;
-    width: 50%;
-    margin-left: 60%;
 
-}
+
 .menu h2{
     text-align: center;
     color: #FFAE42;
@@ -109,6 +98,10 @@ img{
 }
 .pizza{
     width: 40%;
+    margin-left: 1%;
+}
+.label{
+    margin-left: 2%;
 }
 .delivery{
     display: flex;
@@ -157,4 +150,19 @@ img{
     background-color: #FFAE42;
     border: #FFAE42;
     margin-bottom: 1%;
+    margin-left: 1%;
+}
+.result{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 5%;
+    width: 40%;
+    margin-top: 1%;
+}
+.email{
+    width: 40%;
+    background:transparent ;
+    margin-left: 30%;
+    border:1px solid #FFAE42;
+    border-radius: 25px;
+    padding: 1%;
 }
