@@ -99,12 +99,18 @@ img{
     flex-direction: column;
     color: #FFAE42;
     margin-left: 5%;
+   
 }
+
 .contact{
     display: flex;
     flex-direction: column;
     color: #FFAE42;
     text-align: center;
+}
+.result{
+    color: #FFAE42;
+    font-size: 20px;
 }
 #footer{
     color: #FFAE42;
@@ -122,6 +128,7 @@ img{
     margin-left: 5%;
 }
 #delivery{
+    display: none;
     width: 10%;
     padding: 0.5%;
     background-color: #FFAE42;
