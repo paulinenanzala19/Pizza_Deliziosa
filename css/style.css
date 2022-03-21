@@ -95,13 +95,21 @@ img{
     padding: 0.5%;
     margin-left: 1%;
 }
-.toppings{
+#toppings{
+    width: 40%;
+    display: flex;
+    
+    padding: 0.5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+ /* .toppings{
     display: flex;
     margin: 1%;
-    /* border: 1px solid #FFAE42; */
+
     width: 40%;
     justify-content: space-between;
-}
+}  */
 .pizza{
     width: 40%;
     margin-left: 1%;
