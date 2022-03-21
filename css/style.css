@@ -180,3 +180,11 @@ img{
     border-radius: 25px;
     padding: 1%;
 }
+#desc{
+    display: none;
+    color: #FFAE42;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 5%;
+    font-size: 20px;
+    margin-top: 1%;
+}

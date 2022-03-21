@@ -74,12 +74,14 @@ $("button#checkout").click(function(e){
     // $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
 
     $("button#delivery").show()
+   
     
 })
 $(".delivery").hide()
 
 $("button#delivery").click(function(){
     $(".delivery").show()
+    $("p#desc").show()
    
 })
 
