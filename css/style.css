@@ -95,6 +95,12 @@ img{
     padding: 0.5%;
     margin-left: 1%;
 }
+#pickup{
+    width: 40%;
+    padding: 0.5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
 #toppings{
     width: 40%;
     display: flex;
@@ -134,6 +140,7 @@ img{
 .result{
     color: #FFAE42;
     font-size: 20px;
+    border: ipx solid #FFAE42;
 }
 #footer{
     color: #FFAE42;

@@ -1,11 +1,13 @@
-function Pizza(type,size,crust,number,toppings){
+function Pizza(type,size,crust,number,toppings,delivery){
     this.type=type
     this.size=size;
     this.crust=crust;
     this.number=number;
     this.toppings=toppings;
+    this.delivery=delivery;
    
 }
+
  
 Pizza.prototype.getTotalPrice=function(){
     let sizePrice;
@@ -42,22 +44,15 @@ Pizza.prototype.getTotalPrice=function(){
    }else{
        toppingPrice=0;
    }
-   let checkOut= sizePrice + crustPrice + toppingPrice + 200;
-   console.log(checkOut)
+   let deliveryPrice;
+   if(this.delivery=="delivery"){
+       deliveryPrice=200;
+   }else{
+       deliveryPrice=0;
+   }
+ 
+   let total=(sizePrice + crustPrice + toppingPrice + deliveryPrice)*this.number
 
-
-//    let userToppings=[];
-
-//    $.each($("input [name='toppings']:checked"),function(){
-//        userToppings.push($(this).val());
-       
-//    });
-//    console.log(userToppings.join(","));
-
-//    let toppingsPrice= userToppings.length*50;
-//    console.log(toppingsPrice)
-
-   let total=(sizePrice + crustPrice + toppingPrice)*this.number
     
    return total
 };
@@ -73,18 +68,17 @@ $("button#checkout").click(function(e){
     let userCrust=$("#crust option:selected").val()
     let userNo=$(".pizza").val()
     let userToppings=$("#toppings option:selected").val()
+    let userDelivery=$("#pickup option:selected").val()
 
-    // $.each($("input [name='toppings']:checked"),function(){
-    //     userToppings.push($(this).val());
-    // });
+   
 
-    var pizza1=new Pizza(userType,userSize,userCrust,userNo,userToppings)
+    var pizza1=new Pizza(userType,userSize,userCrust,userNo,userToppings,userDelivery)
 
     if(userNo===""){
         alert("please fill this field")
     }
     else{
-        $(".result").append("your order is "+ userType + "," + userSize +"," + userCrust + " : " + pizza1.getTotalPrice())
+        $(".result").append("your order is "+ userType + "," + userSize +"," + userCrust +","+ userToppings + "," + userDelivery +" : " + pizza1.getTotalPrice())
     }
     console.log(pizza1.getTotalPrice())
     // $(".result").append("your order is "+ userSize + " : " + pizza1.getTotalPrice())
@@ -103,32 +97,8 @@ $(".delivery").hide()
 $("button#delivery").click(function(){
 
     $(".delivery").show()
-    $("p#desc").show()
-    let sizePrice;
-    if(this.size=="0"){
-        sizePrice=0;
-    }else if(this.size=="large"){
-        sizePrice=1200;
-    }else if(this.size=="medium"){
-        sizePrice=1000;
-    }else if(this.size=="small"){
-        sizePrice=800;
-    }else{
-        console.log("error")
-    };
-
-   let crustPrice;
-   if(this.crust=="crispy"){
-       crustPrice=500
-   } else if(this.crust=="stuffed"){
-       crustPrice=400
-   }else{
-       crustPrice=300
-   }
-    let checkOut=sizePrice + crustPrice + 200;
-    console.log(checkOut)
-    
-   
+  
+ 
 })
 
  $("#btn").click(function(){
